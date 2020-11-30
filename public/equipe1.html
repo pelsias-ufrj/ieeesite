@@ -86,8 +86,27 @@
                 <div class="wrapper">
                   <div class="linha">
                     <div class="pessoa">
-                      <a href="">
-                        <img src="/images/Equipe 1.png"><p>Insira Contato</p></a>      
+                      <div class="popup" id="popup-1">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup()">&times;</div>
+                          <div class="member">
+                            <img class="member-photo" src="/images/Equipe 1.png">
+                            <h1 class="member-name">Nome do Membro</h1>
+                          </div>
+                          <div class="member-data">
+                            <h1>Dados do membro</h1>
+                            <p>Email: </p>
+                            <p>Lattes: </p>
+                            <p>Linkedn: </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a onclick="togglePopup()">
+                        <img src="/images/Equipe 1.png">
+                        <p>Visualizar Membro</p>
+                      </a>      
                       <p>Insira Nome</p>
                     </div>         
                   </div>
@@ -136,5 +155,7 @@
                     </div>
                   </div>
         <div id="footer"></div>       
+
+        <script src="./js/popupController.js"></script>
     </body>
 </html>
