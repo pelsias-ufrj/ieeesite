@@ -2,9 +2,26 @@ body{
     font-family: 'Montserrat'!important;
     height:100vh !important;
 }
+
+.container{
+    padding: 40px
+}
+
 .text,
-.title{
+.title,
+.title-equip{
     text-align: center;
+}
+
+.img-fluid{
+    margin-bottom:40px ;
+}
+
+.title-equip{
+    font-size: 32px;
+    font-weight: 900;
+    padding-top: 20px;
+    margin-bottom: -10px;
 }
 
 .title{
