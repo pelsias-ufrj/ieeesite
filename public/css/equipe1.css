@@ -189,9 +189,14 @@ body{
     .linha {
         flex-direction:column;
     }
-
+    
     .text{
         margin-left: 10%;
         margin-right: 10%; 
+    }
+    .card-deck{
+        flex-direction:column;
+        margin-left: 20%;
+        margin-right: 20%; 
     }
 }
