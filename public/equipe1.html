@@ -88,7 +88,9 @@
         <div class="wrapper">
           <div class="linha">
             <div class="pessoa">
-              <a data-matricula="001" onclick="togglePopup(this)">
+              <a data-name="Nome genérico" data-email='Email genérico' data-lattes="Link genérico" data-linkedin="Link genérico"
+               onclick="togglePopup(this)"
+              >
                 <img src="/images/Equipe 1.png">
                 <p>Visualizar Membro</p>
               </a>      
@@ -149,21 +151,21 @@
               <div class="close-btn" onclick="togglePopup()">&times;</div>
               <div class="member">
                 <img class="member-photo" src="/images/Equipe 1.png">
-                <h1 class="member-name">Nome do Membro</h1>
+                <h1 class="member-name" id='name'>Nome do Membro</h1>
               </div>
               <div class="member-data">
                 <h1>Dados do membro</h1>
                 <div class='email-div'>
                   <p>Email: </p>
-                  <p class='email'></p>
+                  <p id='email'></p>
                 </div>
                 <div class='lattes-div'>
                   <p>Lattes: </p>
-                  <p class='lattes'></p>
+                  <p id='lattes'></p>
                 </div>
                 <div class='linkedin-div'>
-                  <p>Linkedn: </p>
-                  <p class="linkedin"></p>
+                  <p>Linkedin: </p>
+                  <p id='link'></p>
                 </div>
               </div>
             </div>
