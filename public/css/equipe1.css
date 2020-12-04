@@ -184,6 +184,12 @@ body{
     display: flex;
     flex-direction: row;
 }
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 @media only screen and (max-width: 900px) {
     .linha {
@@ -196,7 +202,7 @@ body{
     }
     .card-deck{
         flex-direction:column;
-        margin-left: 20%;
-        margin-right: 20%; 
+        margin-left: 10%;
+        margin-right: 10%;
+        }
     }
-}
