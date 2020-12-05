@@ -17,3 +17,7 @@ function togglePopup(componente) {
 
   document.getElementById('popup-1').classList.toggle('active');
 }
+function closePopup(event){
+  document.getElementById('popup-1').classList.toggle('inactive');
+
+}
