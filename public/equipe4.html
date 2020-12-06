@@ -86,7 +86,7 @@
               <div class="linha">
                 <div class="pessoa">
                   <a data-name="Nome genérico" data-email='Email genérico' data-lattes="Link genérico" data-linkedin="Link genérico"
-                  onclick="togglePopup(this)"
+                  onclick="openModal(this)"
                   >
                     <img src="/images/Equipe 1.png">
                     <p>Visualizar Membro</p>
@@ -103,7 +103,7 @@
               <div class="linha">
                 <div class="pessoa">
                   <a data-name="Nome genérico" data-email='Email genérico' data-lattes="Link genérico" data-linkedin="Link genérico"
-                  onclick="togglePopup(this)"
+                  onclick="openModal(this)"
                   >
                     <img src="/images/Equipe 1.png">
                     <p>Visualizar Membro</p>
@@ -160,9 +160,8 @@
     
               <!--MODAL START-->
               <div class="popup" id="popup-1">
-                <div class="overlay"></div>
-                <div class="content">
-                  <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <div class="overlay" id="overlay"></div>
+                <div class="content" id="modal">
                   <div class="member">
                     <img class="member-photo" src="/images/Equipe 1.png">
                     <h1 class="member-name" id='name'>Nome do Membro</h1>
