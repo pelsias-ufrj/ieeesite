@@ -99,7 +99,7 @@ body{
         flex-direction: column;
     }
 
-    a{
+    .groups-container a{
         margin:auto;
     }
 
@@ -121,7 +121,7 @@ body{
 }
 
 @media only screen and (max-width: 450px) {
-    a{
+    .groups-container a{
         height: 300px!important;
         width: 300px !important;
     }
