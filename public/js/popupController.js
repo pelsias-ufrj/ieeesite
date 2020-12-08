@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-function togglePopup(componente) {
+function openModal(componente) {
   const name = componente.getAttribute('data-name');
   const email = componente.getAttribute('data-email');
   const lattes = componente.getAttribute('data-lattes');
@@ -16,8 +16,14 @@ function togglePopup(componente) {
   linkedinDiv.textContent = linkedin;
 
   document.getElementById('popup-1').classList.toggle('active');
+  setTimeout(() => { document.addEventListener('click', handleClickOutside, false) }, 200);
 }
-function closePopup(event){
-  document.getElementById('popup-1').classList.toggle('inactive');
 
+const handleClickOutside = (event) => {
+  let modal = document.getElementById("modal");
+
+  if (!modal.contains(event.target)) {
+    document.getElementById('popup-1').classList.toggle('active');
+    document.removeEventListener('click', handleClickOutside, false);
+  }
 }
